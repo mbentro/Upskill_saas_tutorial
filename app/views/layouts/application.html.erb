@@ -21,15 +21,15 @@
             <span class="icon-bar"></span>
           </button>
           <!--<a href="/" class="navbar-brand"><i class="fa fa-group"></i> DevMatch</a>-->
-          <%= link_to "/", class: "navbar-brand" do%> <!--Rails link-->
+          <%= link_to root_path, class: "navbar-brand" do%> <!--Rails link-->
             <i class="fa fa-group"></i>
-              DevMatch
+            DevMatch
           <% end%>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
             <!--<li><a href="/about">About</a></li> <!--HTML type link-->
-            <li><%= link_to "About", "/about" %></li> <!--Embedded Ruby Tag-->
+            <li><%= link_to "About", about_path %></li> <!--Embedded Ruby Tag-->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>

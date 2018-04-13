@@ -4,4 +4,5 @@ class Contact < ActiveRecord::Base
    validates :name, presence: true
    validates :email, presence: true
    validates :comments, presence: true
+   # Will need to add more validations, like letters only fot name, @ sign in email etc...
 end

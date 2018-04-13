@@ -36,6 +36,13 @@
       </div>
     </nav>
     
+    <!-- Put flash messages here, so that they will always appear no matter what page the user is redirected to, rather than in contracts_controller-->
+    <div class="container"> 
+      <% flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+        <!-- String interpolation, replaces variable with string-->
+      <% end %>
+    </div>
     <%= yield %>
 
   </body>
